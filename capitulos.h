@@ -3,7 +3,7 @@
 #ifndef CAPITULOS_H
 #define CAPITULOS_H
 
-#include "video.h"
+#include "videos.h"
 #include <string>
 
 using namespace std;

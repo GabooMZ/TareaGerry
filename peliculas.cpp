@@ -1,7 +1,7 @@
 // Gabriel Eduardo Melendez Zavala A01638293
 
 #include <string>
-#include "Peliculas.h"
+#include "peliculas.h"
 
 
 using namespace std;

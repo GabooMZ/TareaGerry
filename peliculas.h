@@ -3,7 +3,7 @@
 #define PELICULAS_H
 
 
-#include "video.h"
+#include "videos.h"
 #include <string>
 
 using namespace std;
