@@ -1,5 +1,5 @@
 // Gabriel Eduardo Melendez Zavala A01638293
-#include "videos.h"
+#include "video.h"
 #include <string>
 using namespace std;
 
@@ -12,11 +12,14 @@ Video::Video(string id, string name, int duration, string genre){
     this->genre = genre;
     suma_calificaciones = 0;
     num_calificaciones = 0;
-    total_Calificacion = 0;}
+    total_Calificacion = 0;
+    }
 
 Video::~Video(){}
+
 string Video::getId(){
-    return this->id;}
+    return this->id;
+    }
 
 double Video::getCalificacion(){
     return this->total_Calificacion;}

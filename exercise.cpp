@@ -1,5 +1,5 @@
 // Gabriel Eduardo Melendez Zavala A01638293
-#include "videos.h"
+#include "video.h"
 #include "peliculas.h"
 #include "capitulos.h"
 
@@ -23,7 +23,8 @@ int main(){
 
     if (archivo.is_open()) {
     string linea;
-        while (getline(archivo, linea)) {   
+        while (getline(archivo, linea)) { 
+            // cout<<linea<<endl;  
             stringstream ss(linea);
             string t;
             getline(ss, t, ',');

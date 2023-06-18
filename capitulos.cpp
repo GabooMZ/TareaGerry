@@ -20,8 +20,15 @@ Capitulos::Capitulos(string id, string name, int duration, string genre, string 
     
 }
 
-string Capitulos::imprimir(){
-    return this->id +"," +this->name+ "," +to_string(this->duration)+", " +this->genre + ","+this->serie+ "," +to_string(this->num_episodio)+"," + SC();
-}
-
 Capitulos::~Capitulos(){}//destructor
+
+string Capitulos::imprimir(){
+    string output = this->id + ",";
+    output +=  this->name + ",";
+    output += to_string(duration) + ",";
+    output += this->genre + ",";
+    output += this->serie + ",";
+    output += to_string(this->num_episodio) + ",";
+    output +=  imprimir_Calificacion() + ",";
+    return output;
+    }

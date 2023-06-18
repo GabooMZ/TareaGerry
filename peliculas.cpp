@@ -10,6 +10,11 @@ Peliculas::Peliculas():Video(){}//constructor inicial
 Peliculas::Peliculas(string id, string name, int duration, string genre):Video(id, name, duration, genre){}//cponsturctor con parametros
 
 string Peliculas::imprimir(){ // imprimir con el formato standard del ejercicio
-    return this->id+", "+this->name+", " +to_string(this->duration)+", " + this->genre +", "+ SC();
+    string output = this->id + ",";
+    output +=  name + ",";
+    output += to_string(duration) + ",";
+    output += genre + ",";
+    output +=  imprimir_Calificacion() + ",";
+    return output;
 }
 Peliculas::~Peliculas(){}// destructor
